@@ -8,14 +8,24 @@ public class MainLsp {
     rectangle.setWidth(5);
 
     Square square = new Square();
-    square.setWidth(5);
-    square.setHeight(10);
+    square.setSize(5);
+
+    Triangle triangle = new Triangle();
+    triangle.setBase(5);
+    triangle.setHeight(15);
 
     showArea(rectangle);
     showArea(square);
+    showArea(triangle);
+
+    showPerimeter(triangle);
   }
 
-  public static void showArea(Rectangle rectangle) {
-    System.out.println(rectangle.getArea());
+  public static void showArea(Shape shape) {
+    System.out.println(shape.getArea());
+  }
+
+  public static void showPerimeter(Perimeterable shape) {
+    System.out.println(shape.getPerimeter());
   }
 }

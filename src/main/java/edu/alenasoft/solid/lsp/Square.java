@@ -1,16 +1,15 @@
 package edu.alenasoft.solid.lsp;
 
-public class Square extends Rectangle {
+public class Square extends Shape {
 
-  @Override
-  public void setHeight(int height) {
-    super.setHeight(height);
-    super.setWidth(height);
+  private int size;
+
+  public void setSize(int size) {
+    this.size = size;
   }
 
   @Override
-  public void setWidth(int width) {
-    super.setHeight(width);
-    super.setWidth(width);
+  public int getArea() {
+    return this.size*this.size;
   }
 }

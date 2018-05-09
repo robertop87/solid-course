@@ -1,6 +1,6 @@
 package edu.alenasoft.solid.lsp;
 
-public class Rectangle {
+public class Rectangle extends Shape {
 
   private int height;
   private int width;
@@ -19,6 +19,7 @@ public class Rectangle {
     this.width = width;
   }
 
+  @Override
   public int getArea() {
     return this.height * this.width;
   }
