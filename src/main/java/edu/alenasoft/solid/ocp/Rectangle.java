@@ -1,6 +1,6 @@
 package edu.alenasoft.solid.ocp;
 
-public class Rectangle {
+public class Rectangle implements Shape {
 
   private int width;
   private int height;
@@ -24,5 +24,15 @@ public class Rectangle {
 
   public void setHeight(int height) {
     this.height = height;
+  }
+
+  @Override
+  public int getArea() {
+    return this.width * this.height;
+  }
+
+  @Override
+  public int getPerimeter() {
+    return 100;
   }
 }

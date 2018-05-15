@@ -4,10 +4,9 @@ import java.util.List;
 
 public class AreaCalculator {
 
-  public void calcAreas(List<Rectangle> rectangles) {
-    for (Rectangle rectangle: rectangles) {
-      System.out.printf("Area: %d\n",
-          rectangle.getWidth()*rectangle.getHeight());
+  public static void calcAreas(List<Shape> shapes) {
+    for (Shape shape: shapes) {
+      System.out.printf("Area: %d\n", shape.getArea());
     }
   }
 }

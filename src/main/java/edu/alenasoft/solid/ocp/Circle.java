@@ -1,6 +1,6 @@
 package edu.alenasoft.solid.ocp;
 
-public class Circle {
+public class Circle implements Shape {
 
   private int radius;
 
@@ -14,5 +14,10 @@ public class Circle {
 
   public void setRadius(int radius) {
     this.radius = radius;
+  }
+
+  @Override
+  public int getArea() {
+    return 2*(22/7)*this.radius*this.radius;
   }
 }
