@@ -20,11 +20,12 @@ public class OcpClient {
 
     areaCalculator.calcAreas(shapes);
 
+    /*
     PerimeterCalculator perimeterCalculator = new PerimeterCalculator();
     perimeterCalculator.calcPerimeter(Arrays.asList(
         new StarPerimeter(),
         new StarPerimeter(),
         new Rectangle(6, 2)
-    ));
+    ));*/
   }
 }

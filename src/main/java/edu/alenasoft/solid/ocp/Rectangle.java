@@ -35,4 +35,9 @@ public class Rectangle implements Shape {
   public int getPerimeter() {
     return 100;
   }
+
+  @Override
+  public int getTang() {
+    return 0;
+  }
 }

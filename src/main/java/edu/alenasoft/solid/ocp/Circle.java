@@ -20,4 +20,14 @@ public class Circle implements Shape {
   public int getArea() {
     return 2*(22/7)*this.radius*this.radius;
   }
+
+  @Override
+  public int getPerimeter() {
+    return 0;
+  }
+
+  @Override
+  public int getTang() {
+    return 0;
+  }
 }
