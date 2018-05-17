@@ -6,5 +6,4 @@ public class LiveDuckDisplayBehavior implements DisplayBehavior {
   {
     System.out.println("Display live duck");
   }
-
 }
