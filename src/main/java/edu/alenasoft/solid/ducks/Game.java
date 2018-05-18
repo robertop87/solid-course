@@ -3,22 +3,8 @@ package edu.alenasoft.solid.ducks;
 public class Game {
 
   public static void main(String[] args) {
-//    Duck[] ducks = new Duck[3];
-//
-//
-//
-//    ducks[0] = new MallardDuck();
-//    ducks[1] = new RedHeadDuck();
-//    ducks[2] = new RubberDuck();
 
-    /*for (int i = 0; i < ducks.length; i++) {
-      ducks[i].swim();
-      ducks[i].quack();
-      ducks[i].display();
-      ducks[i].fly();
-    }*/
-
-    Duck[] ducks = new Duck[3];
+    Animal[] ducks = new Animal[4];
     ducks[0] = new LiveDuck(new LiveDuckDisplayBehavior(), new LiveDuckSwimBehavior(),
         new FlyBehavior() {
           @Override
@@ -75,6 +61,18 @@ public class Game {
         System.out.println("Quack pato de madera");
       }
     });
+    ducks[3] = new LiveFish(new DisplayBehavior() {
+      @Override
+      public void display() {
+        System.out.println("pescado mostrado");
+      }
+    },
+        new SwimBehavior() {
+          @Override
+          public void swim() {
+            System.out.println("pescado nadando");
+          }
+        });
     for (int i = 0; i < ducks.length; i++) {
       ducks[i].play();
     }
