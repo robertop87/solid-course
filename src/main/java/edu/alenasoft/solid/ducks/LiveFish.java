@@ -1,6 +1,7 @@
 package edu.alenasoft.solid.ducks;
 
 public class LiveFish implements Fish {
+
   private DisplayBehavior displayBehavior;
   private SwimBehavior swimBehavior;
 

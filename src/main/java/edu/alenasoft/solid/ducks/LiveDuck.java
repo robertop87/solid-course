@@ -1,11 +1,14 @@
 package edu.alenasoft.solid.ducks;
 
 public class LiveDuck implements Duck {
+
   private DisplayBehavior displayBehavior;
   private SwimBehavior swimBehavior;
   private FlyBehavior flyBehavior;
   private QuackBehavior quackBehavior;
-  public LiveDuck(DisplayBehavior displayBehavior,  SwimBehavior swimBehavior, FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+
+  public LiveDuck(DisplayBehavior displayBehavior, SwimBehavior swimBehavior,
+      FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
     this.displayBehavior = displayBehavior;
     this.swimBehavior = swimBehavior;
     this.flyBehavior = flyBehavior;
@@ -13,8 +16,7 @@ public class LiveDuck implements Duck {
   }
 
   @Override
-  public void play()
-  {
+  public void play() {
     this.displayBehavior.display();
     this.swimBehavior.swim();
     this.flyBehavior.fly();
