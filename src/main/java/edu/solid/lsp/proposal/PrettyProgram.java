@@ -13,7 +13,10 @@ public class PrettyProgram {
     Square square = new Square();
     square.setSize(30);
 
-    List<Shape> shapes = Arrays.asList(rectangle, square);
+
+
+    List<Shape> shapes = Arrays.asList(rectangle, square,
+        new Circle(15));
 
     shapes.forEach(PrettyProgram::printShape);
   }
