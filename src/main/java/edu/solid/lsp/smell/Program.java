@@ -1,4 +1,4 @@
-package edu.solid.lsp;
+package edu.solid.lsp.smell;
 
 import java.util.Arrays;
 import java.util.List;

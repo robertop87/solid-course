@@ -1,4 +1,4 @@
-package edu.solid.lsp;
+package edu.solid.lsp.smell;
 
 public class Square extends Rectangle {
 
