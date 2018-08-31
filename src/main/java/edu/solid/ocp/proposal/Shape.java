@@ -8,7 +8,7 @@ public class Shape {
     this.areable = areable;
   }
 
-  public void math() {
+  public void printArea() {
     System.out.println(this.areable.area());
   }
 }

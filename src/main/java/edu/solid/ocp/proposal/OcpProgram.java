@@ -1,8 +1,6 @@
 package edu.solid.ocp.proposal;
 
-import java.awt.Point;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class OcpProgram {
@@ -19,6 +17,6 @@ public class OcpProgram {
     });
 
     List<Shape> shapes = Arrays.asList(rectangle, circle, awesome);
-    shapes.forEach(Shape::math);
+    shapes.forEach(Shape::printArea);
   }
 }
